@@ -1,0 +1,53 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    margin-top: 36px;
+}
+
+@media (min-width: 1280px) {
+    .header {
+        margin-top: 24px;
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.get-in-touch {
+    display: none;    
+}
+
+@media (min-width: 769px) {
+    .get-in-touch {
+        display: inline-block; 
+        border-radius: 500px;
+        padding: 10px 16px;
+        width: 140px;
+        height: 39px;
+        background: #97d28b;
+        margin-left: 12px;
+    }
+}
+
+.get-in-touch__wrapper {
+    display: flex;          
+    align-items: center;  
+    gap: 12px;
+}
+
+.get-in-touch__wrapper span {
+    color: #173d33;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+}
