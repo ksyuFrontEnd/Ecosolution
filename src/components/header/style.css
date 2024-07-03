@@ -5,12 +5,13 @@
     top: 0;
     left: 0;
     z-index: 50;
-    margin-top: 36px;
+    background-color: #F8FAFF;
+    padding-top: 36px;
 }
 
 @media (min-width: 1280px) {
     .header {
-        margin-top: 24px;
+        padding-top: 24px;
     }
 }
 
@@ -25,13 +26,12 @@
     flex-direction: row;
 }
 
-.get-in-touch {
+.get-in-touch-btn {
     display: none;    
 }
 
 @media (min-width: 768px) {
-    .get-in-touch {
-        /* display: inline-block;  */
+    .get-in-touch-btn {
         display: flex;
         align-items: center;  
         gap: 12px;
@@ -46,8 +46,13 @@
         letter-spacing: -0.04em;
         }
 
-    .get-in-touch:hover {
+    .get-in-touch-btn:hover {
         background-color: #173d33;
         color: #97d28b;
     }
+
+    .get-in-touch-btn:hover .get-in-touch {
+        fill: #97d28b;
+    }
 }
+

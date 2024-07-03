@@ -6,9 +6,9 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container container">
-                <hr className="footer__line" />
+                <hr className="footer__separator" />
                 <div className="footer__content">
-                    <a href="/" className="header__logo"><img src={logo} alt="logo" /></a>  
+                    <a href="/" className="logo"><img src={logo} alt="logo" /></a>  
                     {/* <div className="arrow-up"></div> */}
                     <div className="social-icons">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,13 +21,13 @@ function Footer() {
                             <path d="M17.6361 7H17.6477" stroke="#173D33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>  
-                    <div className="address footer-info">
+                    <div className="address contact-info">
                         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
                     </div>
-                    <div className="email footer-info">
+                    <div className="email contact-info">
                         <p>office@ecosolution.com</p>
                     </div>
-                    <div className="copyright footer-info">
+                    <div className="copyright contact-info">
                         <p>ecosolution © 2023</p>
                     </div>
                 </div>
