@@ -3,6 +3,8 @@
 }
 
 .menu-icon {
+    display: flex;
+    align-items: center;
     border-radius: 500px;
     padding: 4px 12px;
     width: 40px;
@@ -28,8 +30,7 @@
     border-radius: 25px;
     display: none;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    padding: 24px;
     z-index: 1000;
     overflow-y: auto;
 }
@@ -51,23 +52,18 @@
 }
 
 .menu-close {
-    align-self: flex-start;
+    width: 69px;
+    height: 24px;
+    color:#fff;
     cursor: pointer;
-    margin-top: 24px;
-    margin-left: 19px;
-    gap: 4px;
 }
 
-.menu-close img {
-    width: 10px;
-    height: 10px;
-}
-
-.menu-close img, .menu-close span {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  letter-spacing: -0.04em;
+.menu-close span {
+    padding-left: 4px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.04em;
 }
 
 .separator {

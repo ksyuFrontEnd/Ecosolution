@@ -28,29 +28,15 @@
         row-gap: 16px;
     }
 }
-/* @media (min-width: 1280px) {
-    .footer__content {
-        grid-template-columns: 781px 1fr 1fr;
-    }
-} */
-
-/* .footer-upper-area {
-    grid-area: footer-upper-area;
-    display: flex;
-    justify-content: space-between;
-} */
 
 .logo {
     grid-area: logo;
 }
 
-/* .arrow-up {
-    grid-area: arrow-up;
-    width: 32px;
-    height: 32px;
-    border-radius: 100px;
-    background-color: #97d28b;
-} */
+.logo:hover {
+    fill: #97d28b;
+}
+
 .social-icons{
     grid-area: social-icons;
     display: flex;

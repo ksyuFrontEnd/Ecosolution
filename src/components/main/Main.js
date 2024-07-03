@@ -1,6 +1,6 @@
 import './style.css';
 import wind_turbine from '../../img/wind-turbine.jpg'
-import arrow_right from '../../img/arrow-right.svg'
+import {ReactComponent as ArrowRight} from '../../img/arrow-right.svg'
 
 function Main() {
     return (
@@ -11,7 +11,7 @@ function Main() {
                     <p className="main__text text">Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</p>
                     <button className="learn-more-btn" type="button">
                         <span>Learn more</span>
-                        <img src={arrow_right} alt="arrow right" />
+                        <ArrowRight className="arrow-right" width="32" height="32"/>
                     </button>
                 </div>
                 <hr className="main__separator" />

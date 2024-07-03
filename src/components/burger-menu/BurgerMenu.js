@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
-import menu from './../../img/menu.svg';
-import close from './../../img/menu-close.svg';
+import { ReactComponent as MenuIcon } from '../../img/menu-icon.svg';
+import { ReactComponent as CloseIcon } from '../../img/close-icon.svg';
 
 function BurgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +13,11 @@ function BurgerMenu() {
     return (
         <div className="burger-menu">
             <button className="menu-icon" onClick={toggleMenu}>
-                <img src={isOpen ? close : menu} alt={isOpen ? "close" : "menu"} /> 
+                {isOpen ? <CloseIcon className="close-icon" /> : <MenuIcon />} 
             </button>
             <nav className={`menu ${isOpen ? 'open' : ''}`}>
                 <a className="menu-close" onClick={toggleMenu}>
-                    <img src={close} alt="close" />
+                    <CloseIcon className="close-icon" width="10" height="10"/>
                     <span>close</span>
                 </a>
                 <hr className="separator" />

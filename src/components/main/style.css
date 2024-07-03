@@ -119,6 +119,11 @@
     letter-spacing: -0.04em;  
 }
 
+.learn-more-btn:hover {
+    background-color: #173d33;
+    color: #97d28b;
+}
+
 .main__upper-content button {
     justify-self: center;
 }
