@@ -11,10 +11,8 @@ function Header() {
                 <div className="buttons__wrapper">
                     <BurgerMenu />
                     <button className="get-in-touch" type="button">
-                        <div className="get-in-touch__wrapper">
-                            <span>Get in touch</span>
-                            <img src={dot} alt="dot" />
-                        </div>
+                        <span>Get in touch</span>
+                        <img src={dot} alt="dot" />
                     </button> 
                 </div>        
             </div>

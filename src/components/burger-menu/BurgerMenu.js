@@ -13,9 +13,7 @@ function BurgerMenu() {
     return (
         <div className="burger-menu">
             <button className="menu-icon" onClick={toggleMenu}>
-                <div className="menu-icon__wrapper">
-                    <img src={isOpen ? close : menu} alt={isOpen ? "close" : "menu"} />
-                </div>
+                <img src={isOpen ? close : menu} alt={isOpen ? "close" : "menu"} /> 
             </button>
             <nav className={`menu ${isOpen ? 'open' : ''}`}>
                 <a className="menu-close" onClick={toggleMenu}>

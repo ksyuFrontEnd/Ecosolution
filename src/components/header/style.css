@@ -1,6 +1,7 @@
 .header {
     position: fixed;
     width: 100%;
+    min-height: 40px;
     top: 0;
     left: 0;
     z-index: 50;
@@ -28,26 +29,25 @@
     display: none;    
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .get-in-touch {
-        display: inline-block; 
+        /* display: inline-block;  */
+        display: flex;
+        align-items: center;  
+        gap: 12px;
         border-radius: 500px;
         padding: 10px 16px;
         width: 140px;
         height: 39px;
-        background: #97d28b;
+        background-color: #97d28b;
+        color: #173d33;
         margin-left: 12px;
+        font-size: 16px;
+        letter-spacing: -0.04em;
+        }
+
+    .get-in-touch:hover {
+        background-color: #173d33;
+        color: #97d28b;
     }
-}
-
-.get-in-touch__wrapper {
-    display: flex;          
-    align-items: center;  
-    gap: 12px;
-}
-
-.get-in-touch__wrapper span {
-    color: #173d33;
-    font-size: 16px;
-    letter-spacing: -0.04em;
 }
