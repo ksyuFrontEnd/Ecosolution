@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './burger-menu.css';
 import { ReactComponent as MenuIcon } from '../../img/menu-icon.svg';
 import { ReactComponent as CloseIcon } from '../../img/close-icon.svg';
 

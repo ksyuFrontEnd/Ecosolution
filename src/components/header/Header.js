@@ -1,4 +1,4 @@
-import './style.css';
+import './header.css';
 import {ReactComponent as Logo} from '../../img/logo.svg';
 import {ReactComponent as Get_in_touch} from '../../img/get-in-touch.svg';
 import BurgerMenu from '../burger-menu/BurgerMenu';

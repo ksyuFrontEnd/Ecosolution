@@ -1,4 +1,4 @@
-import './style.css';
+import './main-section.css';
 import wind_turbine from '../../img/wind-turbine.jpg'
 import {ReactComponent as ArrowRight} from '../../img/arrow-right.svg'
 
@@ -27,7 +27,7 @@ function Main() {
                     </div>
                 </div>
                 <div className="main__img">
-                    <img src={wind_turbine} alt="Wind Turbine image" />
+                    <img src={wind_turbine} alt="Wind Turbine" />
                 </div>
             </div>
         </section>

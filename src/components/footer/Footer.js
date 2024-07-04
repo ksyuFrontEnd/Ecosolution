@@ -1,4 +1,4 @@
-import './style.css';
+import './footer.css';
 import {ReactComponent as Logo} from '../../img/logo.svg';
 import {ReactComponent as Facebook} from '../../img/facebook.svg';
 import {ReactComponent as Instagram} from '../../img/instagram.svg';
