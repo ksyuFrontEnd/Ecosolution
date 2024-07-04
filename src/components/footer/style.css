@@ -50,14 +50,13 @@
     .social-icons {
         justify-content: flex-start;
         align-self: start;
-        padding-left: 11px;
-        margin: 0; 
+        margin: 0 0 0 12px; 
     } 
 }
 
 @media (min-width: 1280px) {
     .social-icons {
-        margin-left: 162px;
+        margin: 0 0 0 161px; 
     }
 }
 
@@ -90,14 +89,14 @@
 
 @media (min-width: 768px) {
     .email {
-        padding-left: 11px;
+        margin-left: 12px;
         margin-bottom: 0;
     }  
 }
 
 @media (min-width: 1280px) {
     .email {
-        margin-left: 162px;
+        margin-left: 161px;
     }
 }
 
