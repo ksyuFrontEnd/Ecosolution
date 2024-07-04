@@ -1,0 +1,150 @@
+.cases {
+    margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+    .cases {
+        margin-bottom: 100px;
+    }  
+}
+
+@media (min-width: 1280px) {
+    .cases {
+        margin-bottom: 120px;
+    } 
+}
+
+.cases__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 24px; 
+    margin-bottom: 19px;    
+}
+
+@media (min-width: 768px) {
+    .cases__content{
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+
+.cases__section-header {
+    margin-right: 56px;
+}
+
+.cases__separator {
+    display: none;
+}
+@media (min-width: 768px) {
+    .cases__separator {
+        display: block;
+        border-left: 1px solid #97d28b;; 
+        height: 65px;
+    }
+}
+
+.cases__mode {
+    display: flex;
+}
+
+.pagination {
+    align-self: flex-end;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: -0.04em;
+    text-align: justify;
+    color: #173d33;
+}
+
+.swiper-pagination-total {
+    color: rgba(23, 61, 51, 0.25);
+} 
+
+.navigation {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 7px;
+}
+
+.nav-prev:hover, .nav-next:hover {
+    stroke: #97D28B;
+} 
+
+/* Swiper card */
+.swiper__card {
+    background-color: #eaedf1;
+    height: 318px;
+}
+
+@media (min-width: 768px) {
+    .swiper__card {
+        height: 322px;
+    }
+}
+.swiper__card-img {
+    height: 168px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper__card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper__card-wrapper {
+    padding: 24px 12px 12px 12px;
+}
+
+.swiper__card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper__card-description {
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    text-align: justify;
+    margin-right: 61px;
+}
+
+.swiper__goto-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 16px;
+    width: 60px;
+    height: 60px;
+    background-color: #97d28b;
+}
+
+.swiper__goto-btn:hover {
+    background-color: #173d33;
+}
+
+.swiper__goto-btn:hover .slide-arrow{
+    stroke: #97d28b;
+}
+
+.swiper__separator {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid  #97d28b;
+    margin: 24px 0 12px 0;
+}
+
+.swiper__capture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: -0.04em;
+}

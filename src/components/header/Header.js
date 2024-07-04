@@ -1,6 +1,6 @@
 import './header.css';
 import {ReactComponent as Logo} from '../../img/logo.svg';
-import {ReactComponent as Get_in_touch} from '../../img/get-in-touch.svg';
+import {ReactComponent as GetInTouch} from '../../img/get-in-touch.svg';
 import BurgerMenu from '../burger-menu/BurgerMenu';
 
 function Header() {
@@ -12,7 +12,7 @@ function Header() {
                     <BurgerMenu />
                     <button className="get-in-touch-btn" type="button">
                         <span>Get in touch</span>
-                        <Get_in_touch className="get-in-touch" width="14" height="14" fill="#173d33" />
+                        <GetInTouch className="get-in-touch" width="14" height="14" fill="#173d33" />
                     </button> 
                 </div>        
             </div>

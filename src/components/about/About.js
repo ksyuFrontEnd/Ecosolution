@@ -35,7 +35,7 @@ function About() {
                     </div>
 
                     <div className="values-up-img values-card">
-                        <img src={values_up} alt="Values image" />
+                        <img src={values_up} alt="Value 1" />
                     </div>
 
                     <div className="innovation-card values-card">
@@ -57,7 +57,7 @@ function About() {
                     </div>
 
                     <div className="values-down-img values-card">
-                        <img src={values_down} alt="Values image" />
+                        <img src={values_down} alt="Value 2" />
                     </div>
                 </div>
             </div>

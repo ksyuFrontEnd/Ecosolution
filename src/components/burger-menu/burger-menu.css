@@ -54,7 +54,8 @@
 .menu-close {
     width: 69px;
     height: 24px;
-    color:#fff;
+    background: none;
+    color :#fff;
     cursor: pointer;
 }
 

@@ -16,10 +16,10 @@ function BurgerMenu() {
                 {isOpen ? <CloseIcon className="close-icon" /> : <MenuIcon />} 
             </button>
             <nav className={`menu ${isOpen ? 'open' : ''}`}>
-                <a className="menu-close" onClick={toggleMenu}>
+                <button className="menu-close" onClick={toggleMenu}>
                     <CloseIcon className="close-icon" width="10" height="10"/>
                     <span>close</span>
-                </a>
+                </button>
                 <hr className="separator" />
                 <ul>
                     <li><a href="#main">Main</a></li>
