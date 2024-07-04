@@ -1,8 +1,9 @@
+import "./styles/main.css"
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import About from "./components/about/About";
+import Electricity from "./components/electricity/Electricity";
 import Footer from "./components/footer/Footer";
-import "./styles/main.css"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Main />
       <About />
+      <Electricity />
       <Footer />
     </div>
   );

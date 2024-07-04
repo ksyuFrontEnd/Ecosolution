@@ -1,0 +1,104 @@
+.electricity {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+    .electricity {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .electricity {
+        margin-bottom: 120px;
+    }
+}
+
+.electricity__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.electricity__section-header {
+    max-width: 368px;
+}
+
+@media (min-width: 1280px) {
+    .electricity__section-header {
+        max-width: 491px;
+    }
+}
+
+.electricity__separator {
+    display: block;
+    border-left: 1px solid #97d28b;
+    height: 48px;
+    margin: 24px 0;
+}
+
+@media (min-width: 768px) {
+    .electricity__separator {
+        height: 87px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .electricity__separator {
+        margin: 16px 0 17px 0;
+    }
+}
+
+.electricity__content {
+    display: flex;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .electricity__content {
+        gap: 24px;
+    }
+}
+
+.electricity__content-numbers {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #97d28b;
+}
+
+@media (min-width: 768px) {
+    .electricity__content-numbers {
+        font-size: 100px;
+    } 
+}
+
+@media (min-width: 1280px) {
+    .electricity__content-numbers {
+        font-size: 164px;
+    } 
+}
+
+.electricity__content-kwh {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .electricity__content-kwh {
+        font-size: 28px;
+        line-height: 1.71;   
+    } 
+}
+
+@media (min-width: 1280px) {
+    .electricity__content-kwh {
+        font-size: 48px;
+        line-height: 1;  
+    } 
+}
