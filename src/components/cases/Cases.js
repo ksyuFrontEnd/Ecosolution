@@ -43,8 +43,10 @@ function Cases() {
                     breakpoints={{
                         768: {
                             slidesPerView: 2,
+                            spaceBetween: 24,
                         },
                         1280: {
+                            slidesPerView: 2,
                             spaceBetween: 48,
                         },
                     }}
@@ -76,7 +78,7 @@ function Cases() {
                             </div>
                             <div className="swiper__card-wrapper">
                                 <div className="swiper__card-info">
-                                    <p className="swiper__card-description">Zhytomyr city
+                                    <p className="swiper__card-description">Zhytomyr city<br/>
                                     Private Enterprise “Bosch”</p>
                                     <button className="swiper__goto-btn">
                                         <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
@@ -97,7 +99,7 @@ function Cases() {
                             </div>
                             <div className="swiper__card-wrapper">
                                 <div className="swiper__card-info">
-                                    <p className="swiper__card-description">Rivne city
+                                    <p className="swiper__card-description">Rivne city<br/>
                                     Private Enterprise “Biotech”</p>
                                     <button className="swiper__goto-btn">
                                         <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
@@ -118,7 +120,7 @@ function Cases() {
                             </div>
                             <div className="swiper__card-wrapper">
                                 <div className="swiper__card-info">
-                                    <p className="swiper__card-description">Kherson city
+                                    <p className="swiper__card-description">Kherson city<br/>
                                     Private Enterprise “HealthyFarm”</p>
                                     <button className="swiper__goto-btn">
                                         <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
@@ -139,7 +141,7 @@ function Cases() {
                             </div>
                             <div className="swiper__card-wrapper">
                                 <div className="swiper__card-info">
-                                    <p className="swiper__card-description">Zaporizhia city
+                                    <p className="swiper__card-description">Zaporizhia city<br/>
                                     Private Enterprise “Biotech”</p>
                                     <button className="swiper__goto-btn">
                                         <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
