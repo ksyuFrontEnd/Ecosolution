@@ -1,0 +1,79 @@
+.contact-us__form {
+    width: 100%;
+    height: 559px;
+    background-color: #eaedf1;
+    padding: 36px 12px;
+    margin-top: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.required {
+    margin-bottom: 28px;
+}
+
+.non-required {
+    margin-bottom: 16px;
+}
+
+input {
+    display: flex;
+    background-color: #eaedf1;
+    width: 100%;
+    padding: 8px 0 9px 0;
+    border-bottom: 1px solid  #97d28b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: #bdbdbd;
+  }
+
+  textarea {
+    display: flex;
+    background-color: #eaedf1;
+    width: 100%;
+    padding: 8px 0 16px 0;
+    border-bottom: 1px solid  #97d28b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: #bdbdbd;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+.submit-btn {
+    display: flex;
+    align-items: center; 
+    gap: 12px; 
+    border-radius: 500px;
+    padding: 4px 4px 4px 16px;
+    width: 99px;
+    height: 39px;
+    border: 1px solid #97d28b;
+    background-color: #F8FAFF;
+    color: #173d33;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: -0.04em; 
+    align-self: flex-end;
+}
+
+.submit-btn:hover {
+    background-color: #173d33;
+    color: #97d28b;
+}

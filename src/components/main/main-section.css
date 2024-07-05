@@ -102,9 +102,9 @@
     grid-area: learn-btn;
     display: flex;
     align-items: center; 
-    gap: 11px; 
+    gap: 12px; 
     border-radius: 500px;
-    padding: 4px 4px 4px 16px;
+    padding: 4px 4px 4px 15px;
     width: 141px;
     height: 39px;
     border: 1px solid #97d28b;

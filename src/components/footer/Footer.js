@@ -13,8 +13,8 @@ function Footer() {
                     <a href="/" ><Logo className="logo" width="269px" height="40px" fill="#173d33" /></a>  
                     {/* <div className="arrow-up"></div> */}
                     <div className="social-icons">
-                        <a href="/" ><Facebook className="facebook" width="24px" height="24px" /></a>
-                        <a href="/" ><Instagram className="instagram" width="24px" height="24px" /></a>
+                        <a href="#" ><Facebook className="facebook footer-icon" width="24px" height="24px" stroke="#173D33" /></a>
+                        <a href="#" ><Instagram className="instagram footer-icon" width="24px" height="24px" stroke="#173D33" /></a>
                     </div>  
                     <div className="address contact-info">
                         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>

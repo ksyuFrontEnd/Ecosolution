@@ -1,0 +1,46 @@
+/* Contacts ----------------------------- */
+.contact-us__contacts {
+    margin-right: 76px;
+}
+
+.contacts-title {
+    margin: 24px 0 8px;
+}
+
+.contacts__phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts__body {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__body span {
+    padding-left: 8px;
+}
+
+.contacts-info {
+    font-size: 20px;
+}
+
+.contacts__icon {
+    flex-shrink: 0;
+}
+
+.contacts__body-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.contacts__social-icon {
+    padding: 12px
+}
+
+.contacts__icon:hover {
+    stroke: #97D28B;
+}
+
+/* Form --------------------------------- */

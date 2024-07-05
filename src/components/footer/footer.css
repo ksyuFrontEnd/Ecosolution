@@ -35,13 +35,17 @@
     fill: #97d28b;
 }
 
-.social-icons{
+.social-icons {
     grid-area: social-icons;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 24px auto;
     gap: 8px;
+}
+
+.footer-icon:hover {
+    stroke: #97D28B;
 }
 
 @media (min-width: 768px) {

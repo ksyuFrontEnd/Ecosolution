@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 import {ReactComponent as NavPrev} from '../../img/nav-prev.svg';
 import {ReactComponent as NavNext} from '../../img/nav-next.svg';
-import {ReactComponent as SlideArrow} from '../../img/slide-arrow.svg';
+import {ReactComponent as ArrowUpRight} from '../../img/arrow-up-right.svg';
 import slide_1 from '../../img/slide-1.jpg';
 import slide_2 from '../../img/slide-2.jpg';
 import slide_3 from '../../img/slide-3.jpg';
@@ -60,7 +60,7 @@ function Cases() {
                                 <div className="swiper__card-info">
                                     <p className="swiper__card-description">Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”</p>
                                     <button className="swiper__goto-btn">
-                                        <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
+                                        <ArrowUpRight className="slide-arrow" width="28" height="28" stroke="#173D33"/>
                                     </button>    
                                 </div>
                                 <hr className="swiper__separator" />
@@ -81,7 +81,7 @@ function Cases() {
                                     <p className="swiper__card-description">Zhytomyr city<br/>
                                     Private Enterprise “Bosch”</p>
                                     <button className="swiper__goto-btn">
-                                        <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
+                                        <ArrowUpRight className="slide-arrow" width="28" height="28" stroke="#173D33"/>
                                     </button>    
                                 </div>
                                 <hr className="swiper__separator" />
@@ -102,7 +102,7 @@ function Cases() {
                                     <p className="swiper__card-description">Rivne city<br/>
                                     Private Enterprise “Biotech”</p>
                                     <button className="swiper__goto-btn">
-                                        <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
+                                        <ArrowUpRight className="slide-arrow" width="28" height="28" stroke="#173D33"/>
                                     </button>    
                                 </div>
                                 <hr className="swiper__separator" />
@@ -123,7 +123,7 @@ function Cases() {
                                     <p className="swiper__card-description">Kherson city<br/>
                                     Private Enterprise “HealthyFarm”</p>
                                     <button className="swiper__goto-btn">
-                                        <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
+                                        <ArrowUpRight className="slide-arrow" width="28" height="28" stroke="#173D33"/>
                                     </button>    
                                 </div>
                                 <hr className="swiper__separator" />
@@ -144,7 +144,7 @@ function Cases() {
                                     <p className="swiper__card-description">Zaporizhia city<br/>
                                     Private Enterprise “Biotech”</p>
                                     <button className="swiper__goto-btn">
-                                        <SlideArrow className="slide-arrow" width="28" height="28" stroke="#173D33"/>
+                                        <ArrowUpRight className="slide-arrow" width="28" height="28" stroke="#173D33"/>
                                     </button>    
                                 </div>
                                 <hr className="swiper__separator" />
