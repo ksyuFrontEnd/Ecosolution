@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-container container">
                 <hr className="footer__separator" />
                 <div className="footer__content">
-                <a href="/" ><Logo className="logo" width="269px" height="40px" fill="#173d33" /></a>  
+                    <a href="/" ><Logo className="logo" width="269px" height="40px" fill="#173d33" /></a>  
                     {/* <div className="arrow-up"></div> */}
                     <div className="social-icons">
                         <a href="/" ><Facebook className="facebook" width="24px" height="24px" /></a>

@@ -23,18 +23,25 @@ body {
     }
 }
 
+section {
+    margin-bottom: 36px;
+}
+    
+@media (min-width: 768px) {
+    section {
+        margin-bottom: 100px;
+    }    
+}
+
+@media (min-width: 1280px) {
+    section {
+        margin-bottom: 120px;
+    }    
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-}
-
-.text {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: -0.04em;
-    text-align: justify;
-    color: #173d33;
 }
 
 .section-header {
@@ -52,4 +59,13 @@ h1, h2, h3, h4, h5, h6 {
     .section-header {
         font-size: 48px;
     }
+}
+
+.text {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-align: justify;
+    color: #173d33;
 }
