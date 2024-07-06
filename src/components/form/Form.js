@@ -25,23 +25,22 @@ function Form() {
   const validate = () => {
     let tempErrors = {};
 
-    if (!formData.fullName) {
-      tempErrors.fullName = 'Wrong Fullname';
-    } else if (!/^[a-zA-Z]+ [a-zA-Z]+$/.test(formData.fullName)) {
+    if (!/^[A-Z][a-z]+ [A-Z][a-z]+$/.test(formData.fullName)) {
       tempErrors.fullName = 'Wrong Fullname';
     }
 
-    if (!formData.email) {
-      tempErrors.email = 'Wrong Email';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
       tempErrors.email = 'Wrong Email';
     }
 
-    if (!formData.phone) {
-      tempErrors.phone = 'Wrong Phone';
-    } else if (!/^\d+$/.test(formData.phone)) {
+    if (!/^\d+$/.test(formData.phone)) {
       tempErrors.phone = 'Wrong Phone';
     }
+
+    setErrors(tempErrors);
+
+    return Object.keys(tempErrors).length === 0;
+
   };
 
   const handleSubmit = (e) => {
@@ -66,6 +65,7 @@ function Form() {
             value={formData.fullName}
             onChange={handleChange}
             placeholder="John Rosie"
+            className={errors.fullName ? 'error' : ''}
           />
           {errors.fullName && <p>{errors.fullName}</p>}
         </div>
@@ -78,6 +78,7 @@ function Form() {
             value={formData.email}
             onChange={handleChange}
             placeholder="johnrosie@gmail.com"
+            className={errors.email ? 'error' : ''}
           />
           {errors.email && <p>{errors.email}</p>}
         </div>
@@ -90,6 +91,7 @@ function Form() {
             value={formData.phone}
             onChange={handleChange}
             placeholder="380961234567"
+            className={errors.phone ? 'error' : ''}
           />
           {errors.phone && <p>{errors.phone}</p>}
         </div>
