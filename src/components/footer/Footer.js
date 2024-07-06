@@ -2,7 +2,6 @@ import './footer.css';
 import {ReactComponent as Logo} from '../../img/logo.svg';
 import {ReactComponent as Facebook} from '../../img/facebook.svg';
 import {ReactComponent as Instagram} from '../../img/instagram.svg';
-// import arrow-up from './../../img/arrow-up.svg';
 
 function Footer() {
     return (
@@ -13,8 +12,8 @@ function Footer() {
                     <a href="/" ><Logo className="logo" width="269px" height="40px" fill="#173d33" /></a>  
                     {/* <div className="arrow-up"></div> */}
                     <div className="social-icons">
-                        <a href="#" ><Facebook className="facebook footer-icon" width="24px" height="24px" stroke="#173D33" /></a>
-                        <a href="#" ><Instagram className="instagram footer-icon" width="24px" height="24px" stroke="#173D33" /></a>
+                        <a href="#" ><Facebook className="facebook footer-icon" width="24px" height="24px"  /></a>
+                        <a href="#" ><Instagram className="instagram footer-icon" width="24px" height="24px" /></a>
                     </div>  
                     <div className="address contact-info">
                         <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>

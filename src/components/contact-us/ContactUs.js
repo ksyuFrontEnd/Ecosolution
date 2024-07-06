@@ -15,7 +15,7 @@ function ContactUs() {
                 <div className="contact-us__body">
                     <div className="contact-us__contacts">
                         <div className="contacts__phone">
-                            <p className="contacts__phone-text text contacts-title">Phone:</p>
+                            <p className="contacts__phone-text text contacts-title first-contact-title">Phone:</p>
                             <div className="contacts__phone-wrapper">
                                 <a href="#" className="contacts__body">
                                     <Phone className="phone contacts__icon" width="24" height="24" stroke="#173D33" />
@@ -48,10 +48,10 @@ function ContactUs() {
                             <p className="contacts__socials-text text contacts-title">Social Networks:</p>
                             <div className="contacts__body-icons">
                                 <a href="#" className="contacts__social-icon">
-                                    <FacebookEmpty className="socials__facebook contacts__icon" width="24" height="24" stroke="#173D33" />
+                                    <FacebookEmpty className="socials__facebook contacts__icon" width="24" height="24" />
                                 </a>
                                 <a href="#" className="contacts__social-icon">
-                                    <Instagram className="socials__instagram contacts__icon" width="24" height="24" stroke="#173D33" />
+                                    <Instagram className="socials__instagram contacts__icon" width="24" height="24" />
                                 </a>
                             </div>
                         </div>

@@ -3,7 +3,21 @@
     height: 559px;
     background-color: #eaedf1;
     padding: 36px 12px;
-    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .contact-us__form {
+        width: calc(50% - 12px);
+        padding: 36px 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contact-us__form {
+        height: 623px;
+        width: calc(50% - 24px);
+        padding: 48px 48px; 
+    }
 }
 
 form {
@@ -12,49 +26,47 @@ form {
 }
 
 .form-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.required {
     margin-bottom: 28px;
 }
-
-.non-required {
+  
+.form-item:nth-last-of-type(1) {
     margin-bottom: 16px;
 }
 
-input {
+@media (min-width: 1280px) {
+    .form-item:nth-last-of-type(1) {
+        margin-bottom: 32px;
+    }
+}
+
+input, textarea {
     display: flex;
     background-color: #eaedf1;
-    width: 100%;
-    padding: 8px 0 9px 0;
-    border-bottom: 1px solid  #97d28b;
-    border-top: none;
-    border-left: none;
-    border-right: none;
     font-size: 18px;
     letter-spacing: -0.04em;
     color: #bdbdbd;
-  }
-
-  textarea {
-    display: flex;
-    background-color: #eaedf1;
     width: 100%;
-    padding: 8px 0 16px 0;
-    border-bottom: 1px solid  #97d28b;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    font-size: 18px;
-    letter-spacing: -0.04em;
-    color: #bdbdbd;
-  }
+    padding: 8px 0;
+    border-bottom: 1px solid  #97d28b; 
+}
 
-  textarea {
+@media (min-width: 1280px) {
+    input, textarea {
+        font-size: 20px;
+        padding: 12px 0 8px 0;
+    }
+}
+
+textarea {
+    height: 167px;
     resize: none;
-  }
+}
+
+@media (min-width: 1280px) {
+    textarea {
+        height: 173px;
+    }
+}
 
 .submit-btn {
     display: flex;

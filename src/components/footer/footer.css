@@ -44,9 +44,13 @@
     gap: 8px;
 }
 
-.footer-icon:hover {
-    stroke: #97D28B;
-}
+.footer-icon:hover path[fill] {
+    fill: #97d28b;
+  }
+
+  .footer-icon:hover path[stroke] {
+    stroke: #97d28b;
+  }
 
 @media (min-width: 768px) {
     .social-icons {

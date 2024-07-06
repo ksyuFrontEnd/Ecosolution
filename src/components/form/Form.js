@@ -58,7 +58,7 @@ function Form() {
   return (
     <div className="contact-us__form">
       <form onSubmit={handleSubmit}>
-        <div className="form-item required">
+        <div className="form-item">
           <label className="text">* Full name:</label>
           <input
             type="text"
@@ -70,7 +70,7 @@ function Form() {
           {errors.fullName && <p>{errors.fullName}</p>}
         </div>
 
-        <div className="form-item required">
+        <div className="form-item">
           <label className="text">* E-mail:</label>
           <input
             type="text"
@@ -82,7 +82,7 @@ function Form() {
           {errors.email && <p>{errors.email}</p>}
         </div>
 
-        <div className="form-item required">
+        <div className="form-item">
           <label className="text">* Phone:</label>
           <input
             type="text"
@@ -94,7 +94,7 @@ function Form() {
           {errors.phone && <p>{errors.phone}</p>}
         </div>
 
-        <div className="form-item non-required">
+        <div className="form-item">
           <label className="text">Message:</label>
           <textarea
             name="message"
