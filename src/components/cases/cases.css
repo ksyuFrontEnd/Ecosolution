@@ -77,9 +77,13 @@
     }
 }
 
-.swiper-pagination-total {
+.pagination-current {
+    color: #173d33;
+}
+
+.pagination-total {
     color: rgba(23, 61, 51, 0.25);
-} 
+}
 
 .navigation {
     display: flex;

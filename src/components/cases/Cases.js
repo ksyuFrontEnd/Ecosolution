@@ -40,7 +40,15 @@ function Cases() {
                             prevEl: '.nav-prev',
                             nextEl: '.nav-next',
                         }}
-                        pagination={{ type: 'fraction', el: '.pagination' }}
+                        pagination={{
+                            el: '.pagination',
+                            type: 'custom',
+                            renderCustom: (swiper, current, total) => {
+                                const currentFormatted = String(current).padStart(2, '0');
+                                const totalFormatted = String(total).padStart(2, '0');
+                                return `<span class="pagination-current">${currentFormatted}</span> <span class="pagination-total">/ ${totalFormatted}</span>`;
+                            }
+                        }}
                         loop={true}
                         breakpoints={{
                             768: {
