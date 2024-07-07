@@ -1,5 +1,4 @@
 import './form.css';
-
 import { useState } from 'react';
 import {ReactComponent as ArrowRight} from '../../img/arrow-right.svg'
 

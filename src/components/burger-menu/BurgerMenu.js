@@ -9,6 +9,7 @@ import { Link } from 'react-scroll';
 
 function BurgerMenu({ headerHeight }) {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeSection] = useState('');
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -31,35 +32,35 @@ function BurgerMenu({ headerHeight }) {
                 <hr className="menu__separator" />
                 <div className="menu__body">
                     <ul className="menu__list">
-                        <li className="menu__item">
-                            <Link to="main" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
+                        <li className={`menu__item ${activeSection === 'main' ? 'active' : ''}`}>
+                            <Link to="main" spy={true} smooth={true} offset={-headerHeight} onClick={closeMenu} className="menu__link">     
                                 Main
                             </Link>
-                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
+                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)"/>
                         </li>
-                        <li className="menu__item">
-                            <Link to="about" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
+                        <li className={`menu__item ${activeSection === 'about' ? 'active' : ''}`}>
+                            <Link to="about" spy={true} smooth={true} offset={-headerHeight} onClick={closeMenu} className="menu__link">
                                 About
                             </Link>
-                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
+                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)"/>
                         </li>
-                        <li className="menu__item">
-                            <Link to="cases" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
+                        <li className={`menu__item ${activeSection === 'cases' ? 'active' : ''}`}>
+                            <Link to="cases" spy={true} smooth={true} offset={-headerHeight} onClick={closeMenu} className="menu__link">
                                 Cases
                             </Link>
-                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
+                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)"/>
                         </li>
-                        <li className="menu__item">
-                            <Link to="faq" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
+                        <li className={`menu__item ${activeSection === 'faq' ? 'active' : ''}`}>
+                            <Link to="faq" spy={true} smooth={true} offset={-headerHeight} onClick={closeMenu} className="menu__link">
                                 FAQ
                             </Link>
-                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
+                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)"/>
                         </li>
-                        <li className="menu__item">
-                            <Link to="contact-us" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
+                        <li className={`menu__item ${activeSection === 'contact-us' ? 'active' : ''}`}>
+                            <Link to="contact-us" spy={true} smooth={true} offset={-headerHeight} onClick={closeMenu} className="menu__link">
                                 Contact Us
                             </Link>
-                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
+                            <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)"/>
                         </li>
                     </ul>
                     <div className="menu__social-icons">

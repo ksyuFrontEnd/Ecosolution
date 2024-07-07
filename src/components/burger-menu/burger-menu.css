@@ -140,12 +140,12 @@
     cursor: pointer;
 }
 
-.menu__item.active .menu__link {
-    color: #97d28b;     
+ .menu__item .menu__link.active {
+    color: #97d28b; 
 }
 
-.menu__item.active .menu-arrow path {
-    stroke: #97d28b;
+.menu__item .menu__link.active + .menu-arrow{
+    stroke: #97d28b; 
 }
 
 .menu__item:hover .menu__link, .menu__item:hover .menu-arrow path{

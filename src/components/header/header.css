@@ -10,14 +10,14 @@
     padding: 36px 0;
 }
 
-.header.scrolled {
-    background-color: #fff;
-}
-
 @media (min-width: 1280px) {
     .header {
         padding: 36px 0 12px 0;
     }
+}
+
+.header.scrolled {
+    background-color: #fff;
 }
 
 .header-container {

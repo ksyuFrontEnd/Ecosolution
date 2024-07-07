@@ -3,6 +3,7 @@ import FaqItem from '../faq-item/FaqItem';
 import {ReactComponent as ArrowDown} from '../../img/arrow-down.svg';
 import { Element, Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
 
 function Faq() {
 
@@ -56,38 +57,45 @@ function Faq() {
         };
     }, []);
 
+    // Making section active when visible
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleChange = (visible) => {
+        if (visible) {
+            setIsVisible(true);
+        }
+    };
+
     return (
-        <Element name="faq" className="element">
-            <section className="faq__section">
-                <div className="faq-container container">
-                    <div className="faq__wrapper">
-                        <h2 className="faq__section-header section-header">Frequently Asked Questions</h2>
-                        <div className="faq__body">
-                            {faqItems.map((item, index) => (
-                                <FaqItem
-                                    key={index}
-                                    question={item.question}
-                                    answer={item.answer}
-                                    isOpen={openIndex === index}
-                                    onClick={() => handleItemClick(index)}
-                                />
-                            ))}
-                        </div>
-                        <div className="faq__info">
-                            <p>Didn't find the answer to your question?</p>
-                            {/* <button className="contact-us-btn" type="button">
-                                <span>Contact Us</span>
-                                <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
-                            </button> */}
-                            <Link to="contact-us" smooth={true} offset={-headerHeight} className="contact-us-btn">
-                                <span>Contact Us</span>
-                                <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
-                        </Link>
+        <VisibilitySensor onChange={handleChange} partialVisibility>
+            <Element name="faq" className={`element ${isVisible ? 'active' : ''}`}>
+                <section className="faq__section" id="faq">
+                    <div className="faq-container container">
+                        <div className="faq__wrapper">
+                            <h2 className="faq__section-header section-header">Frequently Asked Questions</h2>
+                            <div className="faq__body">
+                                {faqItems.map((item, index) => (
+                                    <FaqItem
+                                        key={index}
+                                        question={item.question}
+                                        answer={item.answer}
+                                        isOpen={openIndex === index}
+                                        onClick={() => handleItemClick(index)}
+                                    />
+                                ))}
+                            </div>
+                            <div className="faq__info">
+                                <p>Didn't find the answer to your question?</p>
+                                <Link to="contact-us" smooth={true} offset={-headerHeight} className="contact-us-btn">
+                                    <span>Contact Us</span>
+                                    <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </Element>
+                </section>
+            </Element>
+        </VisibilitySensor>
     )
 }
 
