@@ -1,16 +1,16 @@
-.main {
-    margin-top: 222px;
+.main__section {
+    margin-top: 110px;
 }
 
 @media (min-width: 768px) {
-    .main {
-        margin-top: 240px;
+    .main__section {
+        margin-top: 128px;
     }
 }
 
 @media (min-width: 1280px) {
-    .main {
-        margin-top: 264px;
+    .main__section {
+        margin-top: 176px;
     }
 }
 

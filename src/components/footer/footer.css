@@ -1,3 +1,7 @@
+.footer__wrapper {
+    margin-bottom: 24px;
+}
+
 .footer__separator {
     width: 100%;
     border-top: 1px solid  #97d28b;
@@ -13,7 +17,7 @@
     "copyright";
     grid-template-rows: auto;
     grid-template-columns: 1fr;
-    margin: 24px 0;
+    margin-top: 24px;
 }
 @media (min-width: 768px) {
     .footer__content {
@@ -34,6 +38,13 @@
 .logo:hover {
     fill: #97d28b;
 }
+
+.scroll-to-main {
+    position: fixed;
+    bottom: 189px;
+    right: 20px;
+    cursor: pointer;
+  }
 
 .social-icons {
     grid-area: social-icons;

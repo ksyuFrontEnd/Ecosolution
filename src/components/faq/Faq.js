@@ -2,6 +2,7 @@ import './faq.css';
 import { useState } from 'react';
 import FaqItem from '../faq-item/FaqItem';
 import {ReactComponent as ArrowDown} from '../../img/arrow-down.svg';
+import { Element } from 'react-scroll';
 
 function Faq() {
 
@@ -35,31 +36,33 @@ function Faq() {
     };
 
     return (
-        <section className="faq">
-            <div className="faq-container container">
-                <div className="faq__wrapper">
-                    <h2 className="faq__section-header section-header">Frequently Asked Questions</h2>
-                    <div className="faq__body">
-                        {faqItems.map((item, index) => (
-                            <FaqItem
-                                key={index}
-                                question={item.question}
-                                answer={item.answer}
-                                isOpen={openIndex === index}
-                                onClick={() => handleItemClick(index)}
-                            />
-                        ))}
-                    </div>
-                    <div className="faq__info">
-                        <p>Didn't find the answer to your question?</p>
-                        <button className="contact-us-btn" type="button">
-                            <span>Contact Us</span>
-                            <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
-                        </button>
+        <Element name="faq" className="element">
+            <section className="faq__section">
+                <div className="faq-container container">
+                    <div className="faq__wrapper">
+                        <h2 className="faq__section-header section-header">Frequently Asked Questions</h2>
+                        <div className="faq__body">
+                            {faqItems.map((item, index) => (
+                                <FaqItem
+                                    key={index}
+                                    question={item.question}
+                                    answer={item.answer}
+                                    isOpen={openIndex === index}
+                                    onClick={() => handleItemClick(index)}
+                                />
+                            ))}
+                        </div>
+                        <div className="faq__info">
+                            <p>Didn't find the answer to your question?</p>
+                            <button className="contact-us-btn" type="button">
+                                <span>Contact Us</span>
+                                <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Element>
     )
 }
 

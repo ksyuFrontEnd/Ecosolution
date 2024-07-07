@@ -54,6 +54,14 @@
     flex-direction: column;
 }
 
+.app {
+    transition: filter 0.3s ease;
+  }
+  
+  .app.blurred {
+    filter: blur(5px);
+  }
+
 .menu-close-btn {
     display: flex;
     align-items: center;
@@ -137,10 +145,14 @@
     font-size: 24px;
     letter-spacing: -0.04em;
     color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
 }
 
-.menu__item:active .menu__link, .menu__item:active .menu-arrow path {
-    color: #97d28b;   
+.menu__item.active .menu__link {
+    color: #97d28b;     
+}
+
+.menu__item.active .menu-arrow path {
     stroke: #97d28b;
 }
 

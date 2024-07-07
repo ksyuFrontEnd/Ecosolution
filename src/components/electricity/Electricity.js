@@ -2,7 +2,7 @@ import './electricity.css';
 
 function Electricity() {
     return (
-        <section className="electricity">
+        <section className="electricity__section">
             <div className="electricity-container container">
                 <div className="electricity__wrapper">
                     <h2 className="electricity__section-header section-header">Electricity we produced for all time</h2>
