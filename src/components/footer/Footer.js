@@ -3,10 +3,8 @@ import {ReactComponent as Logo} from '../../img/logo.svg';
 import {ReactComponent as Facebook} from '../../img/facebook.svg';
 import {ReactComponent as Instagram} from '../../img/instagram.svg';
 import {ReactComponent as ArrowUp } from '../../img/arrow-up.svg';
-
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
-
 
 function Footer() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -39,13 +37,13 @@ function Footer() {
                         
                         <div className="scroll-to-main">
                             <Link to="main" smooth={true} offset={-headerHeight}>
-                                <ArrowUp className="arrow-up" />
+                                <ArrowUp className="arrow-up" width="32" height="32"/>
                             </Link>
                         </div>
                         
                         <div className="social-icons">
-                            <a href="#" ><Facebook className="facebook footer-icon" width="24px" height="24px"  /></a>
-                            <a href="#" ><Instagram className="instagram footer-icon" width="24px" height="24px" /></a>
+                            <a href="#"><Facebook className="facebook footer-icon" width="24px" height="24px"  /></a>
+                            <a href="#"><Instagram className="instagram footer-icon" width="24px" height="24px" /></a>
                         </div>  
                         <div className="address contact-info">
                             <p>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</p>
