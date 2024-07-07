@@ -48,7 +48,7 @@ function Form() {
     if (validate()) {
       setSubmitted(true);
       setTimeout(() => {
-        alert('Form submitted successfully');
+        alert('Yoohoooo! Form submitted successfully!:)');
         setSubmitted(false);
       }, 2000);
     }

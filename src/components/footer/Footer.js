@@ -4,10 +4,31 @@ import {ReactComponent as Facebook} from '../../img/facebook.svg';
 import {ReactComponent as Instagram} from '../../img/instagram.svg';
 import {ReactComponent as ArrowUp } from '../../img/arrow-up.svg';
 
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
+import { useState, useEffect } from 'react';
 
 
 function Footer() {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const headerHeight = 112;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if (scrollTop > headerHeight) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <footer className="footer">
             <div className="footer-container container">
@@ -17,8 +38,8 @@ function Footer() {
                         <a href="/" ><Logo className="logo" width="269px" height="40px" fill="#173d33" /></a>  
                         
                         <div className="scroll-to-main">
-                            <Link to="main" smooth={true} duration={500}>
-                            <ArrowUp />
+                            <Link to="main" smooth={true} offset={-headerHeight}>
+                                <ArrowUp className="arrow-up" />
                             </Link>
                         </div>
                         

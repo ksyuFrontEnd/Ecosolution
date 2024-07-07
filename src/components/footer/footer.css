@@ -44,7 +44,15 @@
     bottom: 189px;
     right: 20px;
     cursor: pointer;
-  }
+}
+
+.scroll-to-main:hover .arrow-up rect {
+    fill: #173D33;
+}
+
+.scroll-to-main:hover .arrow-up path {
+    stroke: #97d28b;
+}
 
 .social-icons {
     grid-area: social-icons;

@@ -1,8 +1,8 @@
 import './faq.css';
-import { useState } from 'react';
 import FaqItem from '../faq-item/FaqItem';
 import {ReactComponent as ArrowDown} from '../../img/arrow-down.svg';
-import { Element } from 'react-scroll';
+import { Element, Link } from 'react-scroll';
+import { useState, useEffect } from 'react';
 
 function Faq() {
 
@@ -35,6 +35,27 @@ function Faq() {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    // Scrolling to Contact Us section
+    const [isScrolled, setIsScrolled] = useState(false);
+    const headerHeight = 112;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if (scrollTop > headerHeight) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <Element name="faq" className="element">
             <section className="faq__section">
@@ -54,10 +75,14 @@ function Faq() {
                         </div>
                         <div className="faq__info">
                             <p>Didn't find the answer to your question?</p>
-                            <button className="contact-us-btn" type="button">
+                            {/* <button className="contact-us-btn" type="button">
                                 <span>Contact Us</span>
                                 <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
-                            </button>
+                            </button> */}
+                            <Link to="contact-us" smooth={true} offset={-headerHeight} className="contact-us-btn">
+                                <span>Contact Us</span>
+                                <ArrowDown className="contact-us" width="14" height="14" fill="#173d33" />
+                        </Link>
                         </div>
                     </div>
                 </div>
