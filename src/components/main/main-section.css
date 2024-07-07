@@ -114,6 +114,13 @@
     line-height: 1.12;
     letter-spacing: -0.04em; 
     cursor: pointer; 
+    justify-self: center;
+}
+
+@media (min-width: 768px) {
+    .learn-more-btn {
+        justify-self: flex-start;
+    }
 }
 
 .learn-more-btn:hover {
