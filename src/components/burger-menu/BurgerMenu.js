@@ -14,6 +14,10 @@ function BurgerMenu({ headerHeight }) {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <div className="burger-menu">
             <button className="menu-btn" onClick={toggleMenu}>
@@ -28,31 +32,31 @@ function BurgerMenu({ headerHeight }) {
                 <div className="menu__body">
                     <ul className="menu__list">
                         <li className="menu__item">
-                            <Link to="main" smooth={true} offset={-headerHeight} className="menu__link">
+                            <Link to="main" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
                                 Main
                             </Link>
                             <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
                         </li>
                         <li className="menu__item">
-                            <Link to="about" smooth={true} offset={-headerHeight} className="menu__link">
+                            <Link to="about" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
                                 About
                             </Link>
                             <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
                         </li>
                         <li className="menu__item">
-                            <Link to="cases" smooth={true} offset={-headerHeight} className="menu__link">
+                            <Link to="cases" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
                                 Cases
                             </Link>
                             <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
                         </li>
                         <li className="menu__item">
-                            <Link to="faq" smooth={true} offset={-headerHeight} className="menu__link">
+                            <Link to="faq" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
                                 FAQ
                             </Link>
                             <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
                         </li>
                         <li className="menu__item">
-                            <Link to="contact-us" smooth={true} offset={-headerHeight} className="menu__link">
+                            <Link to="contact-us" smooth={true} offset={-headerHeight} className="menu__link" onClick={closeMenu}>
                                 Contact Us
                             </Link>
                             <ArrowUpRight className="menu-arrow" width="16" height="16" stroke="rgba(255, 255, 255, 0.25)" />
@@ -64,6 +68,7 @@ function BurgerMenu({ headerHeight }) {
                     </div>
                 </div>
             </nav>
+            {isOpen && <div className="blur-background" />}
         </div>
     );
 }
